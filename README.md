@@ -1,0 +1,1 @@
+This course is taught by one of the world's leading Go Programming Trainers, Todd McLeod. Todd was the first university professor in America to teach Go at the university level. Todd has taught over 1.65 Million students how to use the Go Programming Language. This course is tried, tested, and proven to train beginners and experienced developers how to use Go.
