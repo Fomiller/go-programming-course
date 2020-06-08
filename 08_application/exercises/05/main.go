@@ -18,15 +18,15 @@ type ByAge []user
 
 // methods for ByAge type
 func (a ByAge) Len() int           { return len(a) }
-func (a ByAge) Swap(i, j int)      { a[i], a[j] = a[j], a[i] }
 func (a ByAge) Less(i, j int) bool { return a[i].Age < a[j].Age }
+func (a ByAge) Swap(i, j int)      { a[i], a[j] = a[j], a[i] }
 
 type ByLast []user
 
 // methods for ByAge type
 func (a ByLast) Len() int           { return len(a) }
-func (a ByLast) Swap(i, j int)      { a[i], a[j] = a[j], a[i] }
 func (a ByLast) Less(i, j int) bool { return a[i].Last < a[j].Last }
+func (a ByLast) Swap(i, j int)      { a[i], a[j] = a[j], a[i] }
 
 func main() {
 	u1 := user{
@@ -62,15 +62,6 @@ func main() {
 		},
 	}
 
-	// users := []user{u1, u2, u3}
-
-	// fmt.Println(users)
-
-	// // your code goes here
-	// sort.Sort(ByAge(users))
-	// fmt.Println("----------------------")
-	// sort.Sort(ByLast(users))
-
 	users := []user{u1, u2, u3}
 	for _, u := range users {
 		fmt.Println(u.First, u.Last, u.Age)
@@ -81,6 +72,7 @@ func main() {
 	}
 
 	fmt.Println("-------")
+	fmt.Println("Sorted by age ")
 
 	sort.Sort(ByAge(users))
 	for _, u := range users {
@@ -91,6 +83,7 @@ func main() {
 	}
 
 	fmt.Println("-------")
+	fmt.Println("Sorted by last name")
 
 	sort.Sort(ByLast(users))
 	for _, u := range users {
