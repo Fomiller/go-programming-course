@@ -1,0 +1,3 @@
+review of what is concurrency and what is parallelism
+You can no have parallelism if you do not have more then one CPU
+concurrency is the act of running 2 or more functions at the same time, or concurrently.
