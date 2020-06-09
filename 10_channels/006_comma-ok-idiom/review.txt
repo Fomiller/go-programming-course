@@ -1,0 +1,4 @@
+reviewing the comma ok idiom to check if you are pulling any new variables off of a channel
+if the ok returns true you recieved a new variable
+
+if returns false no new variables were pulled off of the channel.
