@@ -1,0 +1,14 @@
+This chapter outlines writing and reading documentation with tools such as go doc.
+
+godoc.org
+standard library and third party package documentation
+
+golang.org
+standard library documentation
+
+go doc
+command to read documentation at the command line
+
+godoc
+command to read documentation at the command line
+also can run a local server showing documentation
